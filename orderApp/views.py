@@ -25,3 +25,6 @@ def login(request):
         else:
             uf = UserForm()
         return render(request, 'orderApp/login.html', {'uf': uf})
+
+def print(request):
+    print 'jijgijgit'
