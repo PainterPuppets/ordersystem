@@ -7,18 +7,11 @@
 	 <TITLE>{% block title %}{% endblock %}</TITLE>
 	 <LINK REL="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 	 <LINK REL="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}">
-	 <LINK REL="stylesheet" type="text/css" href="{% static 'bootstrap/css/base.css' %}">
-
-
-  <META NAME="Generator" CONTENT="Vim 8.0 (Vi IMproved editor; http://www.vim.org/)">
-  <META NAME="Author" CONTENT="">
-  <META NAME="Copyright" CONTENT="Copyright (C) 二月 20, 2017 ">
-  <LINK REV="made" HREF="mailto:">
-
-<script TYPE="text/javascript" src="{% static 'bootstrap/js/jquery.min.js' %}"><script>
-<script TYPE="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"><script>
+     <script TYPE="text/javascript" src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+     <script TYPE="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </HEAD>
- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ <nav class= "navbar navbar-inverse navbar-fixed-top" role="navigation">
 	 <div class="container">
 	 <div class="navbar-header">
 		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-basepage">
@@ -28,7 +21,6 @@
 		 </button>
 		 <a href="{% url 'homepage' %}" class="navbar-brand">OrderSytem</a>
 	 </div>
-	 
 
  <div class="collapse navbar-collapse" id="navbar-collapse-basepage">
 	 <ul class="nav navbar-nav">
@@ -56,7 +48,7 @@
  <header  class="jumbotron subhead" id="header-base">
 	 <div class="container">
 	 	<h1>餐饮管理系统</h1>
-		<h3>&emsp;&emsp;人是铁，饭是钢</h3>
+		<h3>&emsp;&emsp;</h3>
 	</div>
 </header>
 
@@ -67,11 +59,11 @@
 	<div class="container">
 		<p class="text-center"><strong>HIT-CS</strong></p>
 		<p class="text-center">@All rights reserved</p>
-		<h5 class="text-center">Powered by&nbsp;<a href="http://yumendy.com/">LiQingQing</a></h5>
+		<h5 class="text-center">Powered by&nbsp;<a href="http://yumendy.com/">Abby Lee</a></h5>
 	</div>
 </footer>
 <script type="text/javascript">
-	$(#{{active_menu}}').addClass("active");
+	$({{active_menu}}).addClass("active");
 </script>
  </BODY>
 </HTML>
