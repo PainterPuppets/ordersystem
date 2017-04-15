@@ -23,6 +23,7 @@
     <div id="login-center" class="login-center4">
         <div class=" loing-center-warp">
 <form action="/order/login" id="fLogin" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
 	<span>用户登录</span>
 	<div class="login-errmsg" style="display: none;"></div>
 	<div class="inputbox login-user yj3 inputbox-on">
@@ -31,7 +32,7 @@
 	<div class="inputbox login-psw yj3">
 		<input data-val="true" data-val-required="请输入密码" id="txtPsw" maxlength="20" myholder="密码" name="Password" placeholder="密码" tabindex="2" type="password" value="" />
 	</div>
-	<a class="btn but-login" id="btnOk" tabindex="3">登录</a>
+	<a class="btn but-login" id="btnOk" tabindex="3" href="http://127.0.0.1:8000/order/index/">登录</a>
 	<a class="btn but-login"  tabindex="3" href="http://127.0.0.1:8000/order/regist/">注册</a>
 	<div class="login-msg"></div>
 	<input id="ReturnUrl" name="ReturnUrl" type="hidden" value="/" />
