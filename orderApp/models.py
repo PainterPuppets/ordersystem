@@ -12,11 +12,12 @@ class User(models.Model):
     def __unicode__(self):
         return self.username
 
+
 class Dish(models.Model):
-    dishname =  models.CharField(max_length=150)
-    dimage = models.ImageField(default='/home/liqingqing/图片/1.jpg')
-    fprice = models.FloatField()
-    dtype = models.CharField(max_length=150)
+    name = models.CharField(max_length=150)
+    image = models.ImageField(default='/home/liqingqing/图片/1.jpg')
+    price = models.FloatField()
+    type = models.CharField(max_length=150)
     description = models.TextField()
     recipe = models.TextField()
     sales = models.IntegerField(default=0)
@@ -25,5 +26,5 @@ class Dish(models.Model):
 class Img(models.Model):
     name = models.CharField(max_length = 128)
     description = models.TextField()
-    img = models.ImageField()
+    img = models.ImageField(default='/home/liqingqing/图片/1.jpg')
     dish = models.ForeignKey(Dish)
