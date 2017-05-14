@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='orderApp/index2.html'), name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^order/', include('apps.orderApp.urls')),
+    url(r'^backend/', include('apps.backend.urls')),
 ]
